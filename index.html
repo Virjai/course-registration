@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course and Students Maintenance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Course and Students Maintenance</h1>
+        <h2>Course</h2>
+        <select name="courseDropdown" id="courseDropdown">
+            <option value="course">Select a course</option>
+        </select>
+    
+        <button type="button" id="addCourseBtn">Add New Course</button>
+        <div id="courseInputSection" style="display: none;">
+            <input type="text" id="courseInput" placeholder="Enter course name">
+            <button id="courseTickBtn">&#x2714</button>
+            <button id="courseCrossBtn">&#x274C</button>
+        </div>
+    </div>
+
+    <div>
+        <br><br><br>
+        <h2>Students</h2>
+        <select id="studentDropdown">
+            <option value="">Select a student</option>
+        </select>
+        <button id="addStudentBtn" style="display: none;">Add New Student</button>
+        <div id="studentInputSection" style="display: none;">
+            <input type="text" id="studentInput" placeholder="Enter student name">
+            <button id="studentTickBtn">&#x2714</button>
+            <button id="studentCrossBtn">&#x274C</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
